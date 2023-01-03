@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "vanillaplus:block/nettherack_mythril_ore"
-  }
-}

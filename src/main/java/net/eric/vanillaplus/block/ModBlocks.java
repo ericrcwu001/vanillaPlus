@@ -21,7 +21,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ItemGroup.MISC);
     public static final Block DEEPSLATE_MYTHRIL_ORE = registerBlock("deepslate_mythril_ore",
             new Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()), ItemGroup.MISC);
-    public static final Block NETTHERACK_MYTHRIL_ORE = registerBlock("nettherack_mythril_ore",
+    public static final Block NETHERACK_MYTHRIL_ORE = registerBlock("netherack_mythril_ore",
             new Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()), ItemGroup.MISC);
 
 
