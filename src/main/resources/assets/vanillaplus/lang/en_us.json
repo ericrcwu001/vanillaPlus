@@ -7,5 +7,7 @@
   "block.vanillaplus.mythril_ore": "Mythril Ore",
   "block.vanillaplus.raw_mythril_block": "Raw Mythril Block",
   "block.vanillaplus.nettherack_mythril_ore": "Netherack Mythril Ore",
-  "block.vanillaplus.deepslate_mythril_block": "Deepslate Mythril Block"
+  "block.vanillaplus.deepslate_mythril_block": "Deepslate Mythril Block",
+
+  "ItemGroup.vanillaplus.mythril": "Aether Items"
 }
