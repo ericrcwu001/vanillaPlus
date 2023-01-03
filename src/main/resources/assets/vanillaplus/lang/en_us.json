@@ -3,5 +3,9 @@
   "item.vanillaplus.mythril_nugget": "Mythril Nugget",
   "item.vanillaplus.raw_mythril": "Raw Mythril",
 
-  "block.vanillaplus.mythril_block": "Mythril Block"
+  "block.vanillaplus.mythril_block": "Mythril Block",
+  "block.vanillaplus.mythril_ore": "Mythril Ore",
+  "block.vanillaplus.raw_mythril_block": "Raw Mythril Block",
+  "block.vanillaplus.nettherack_mythril_ore": "Nettherack Mythril Ore",
+  "block.vanillaplus.deepslate_mythril_block": "Deepslate Mythril Block"
 }
