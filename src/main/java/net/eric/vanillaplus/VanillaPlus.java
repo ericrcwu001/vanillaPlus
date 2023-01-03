@@ -1,5 +1,6 @@
 package net.eric.vanillaplus;
 
+import net.eric.vanillaplus.block.ModBlocks;
 import net.eric.vanillaplus.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -12,5 +13,6 @@ public class VanillaPlus implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
