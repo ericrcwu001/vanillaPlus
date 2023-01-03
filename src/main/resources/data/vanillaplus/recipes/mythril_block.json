@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "vanillaplus:mythril_ingot"
+    }
+  },
+  "result": {
+    "item": "vanillaplus:mythril_block"
+  }
+}
