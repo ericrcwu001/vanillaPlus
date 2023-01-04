@@ -1,10 +1,6 @@
 {
   "replace": false,
   "values": [
-    "vanillaplus:mythril_block",
-    "vanillaplus:mythril_ore",
-    "vanillaplus:deepslate_mythril_ore",
-    "vanillaplus:netherrack_mythril_ore",
-    "vanillaplus:raw_mythril_ore"
+
   ]
 }

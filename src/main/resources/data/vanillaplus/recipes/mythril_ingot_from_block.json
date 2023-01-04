@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "tutorialmod:mythril_block"
+      "item": "vanillaplus:mythril_block"
     }
   ],
   "result": {
-    "item": "tutorialmod:mythril_ingot",
+    "item": "vanillaplus:mythril_ingot",
     "count": 9
   }
 }
