@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.eric.simple_backpack.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "EnchantmentTargetMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

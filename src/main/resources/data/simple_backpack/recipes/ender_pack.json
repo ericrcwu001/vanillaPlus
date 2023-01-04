@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "CAC",
+      "ABA",
+      "CAC"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:iron_ingot"
+      },
+      "B": {
+        "item": "minecraft:ender_chest"
+      },
+      "C": {
+        "tag": "minecraft:wool"
+      }
+    },
+    "result": {
+      "item": "simple_backpack:ender_pack",
+      "count": 1
+    }
+  }

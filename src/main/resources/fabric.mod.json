@@ -14,16 +14,22 @@
   },
 
   "license": "MIT",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/vanillaplus/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.eric.vanillaplus.VanillaPlus"
-    ]
+      "net.eric.vanillaplus.VanillaPlus",
+      "net.eric.simple_backpack.Backpack"
+    ],
+    "client": [
+      "net.eric.simple_backpack.BackpackClient"
+    ],
+    "server": []
   },
   "mixins": [
-    "vanillaplus.mixins.json"
+    "vanillaplus.mixins.json",
+    "simple_backpack.mixins.json"
   ],
 
   "depends": {

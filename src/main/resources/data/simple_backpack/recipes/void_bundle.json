@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      " B ",
+      "ACA",
+      " A "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:leather"
+      },
+      "B": {
+        "item": "minecraft:string"
+      },
+      "C": {
+        "item": "simple_backpack:void_pack"
+      }
+    },
+    "result": {
+      "item": "simple_backpack:void_bundle",
+      "count": 1
+    }
+  }
