@@ -3,13 +3,7 @@ package net.eric.simple_backpack;
 import net.eric.simple_backpack.backpack.BackpackInventoryInterface;
 import net.eric.simple_backpack.backpack.BackpackItem;
 import net.eric.simple_backpack.backpack.BackpackScreenHandler;
-import net.eric.simple_backpack.bundle.SimpleBundleItem;
-import net.eric.simple_backpack.bundle.VoidBundleItem;
 import net.eric.simple_backpack.config.ModConfig;
-import net.eric.simple_backpack.enderpack.EnderPackItem;
-import net.eric.simple_backpack.voidpack.VoidPackInventoryInterface;
-import net.eric.simple_backpack.voidpack.VoidPackItem;
-import net.eric.simple_backpack.voidpack.VoidPackScreenHandler;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 import me.shedaniel.autoconfig.serializer.PartitioningSerializer;
@@ -33,68 +27,88 @@ public class Backpack implements ModInitializer
 
     public static final String MOD_ID = "simple_backpack";
     public static final String MOD_NAME = "SimpleBackpack";
-    public static final ItemGroup SIMPLE_BACKPACK_GROUP = FabricItemGroupBuilder.build(new Identifier(MOD_ID, "simple_backpack_group"), () -> new ItemStack(Backpack.BACKPACK));
+    public static final ItemGroup SIMPLE_BACKPACK_GROUP = FabricItemGroupBuilder.build(new Identifier(MOD_ID, "simple_backpack_group"), () -> new ItemStack(Backpack.WHITE_BACKPACK));
 
     public static final ModConfig CONFIG = AutoConfig.register(ModConfig.class, PartitioningSerializer.wrap(JanksonConfigSerializer::new)).getConfig();
 
-    public static final Identifier BACKPACK_IDENTIFIER = new Identifier(MOD_ID, "backpack");
-    public static final Identifier VOID_PACK_IDENTIFIER = new Identifier(MOD_ID, "void_pack");
-    public static final Identifier ENDER_PACK_IDENTIFIER = new Identifier(MOD_ID, "ender_pack");
+    public static final Identifier WHITE_BACKPACK_IDENTIFIER = new Identifier(MOD_ID, "white_backpack");
+    public static final Identifier ORANGE_BACKPACK_IDENTIFIER = new Identifier(MOD_ID, "orange_backpack");
+    public static final Identifier MAGENTA_BACKPACK_IDENTIFIER = new Identifier(MOD_ID, "magenta_backpack");
+    public static final Identifier LIGHT_BLUE_BACKPACK_IDENTIFIER = new Identifier(MOD_ID, "light_blue_backpack");
+    public static final Identifier YELLOW_BACKPACK_IDENTIFIER = new Identifier(MOD_ID, "yellow_backpack");
+    public static final Identifier LIME_BACKPACK_IDENTIFIER = new Identifier(MOD_ID, "lime_backpack");
+    public static final Identifier PINK_BACKPACK_IDENTIFIER = new Identifier(MOD_ID, "pink_backpack");
+    public static final Identifier GRAY_BACKPACK_IDENTIFIER = new Identifier(MOD_ID, "gray_backpack");
+    public static final Identifier LIGHT_GRAY_BACKPACK_IDENTIFIER = new Identifier(MOD_ID, "light_gray_backpack");
+    public static final Identifier CYAN_BACKPACK_IDENTIFIER = new Identifier(MOD_ID, "cyan_backpack");
+    public static final Identifier PURPLE_BACKPACK_IDENTIFIER = new Identifier(MOD_ID, "purple_backpack");
+    public static final Identifier BLUE_BACKPACK_IDENTIFIER = new Identifier(MOD_ID, "blue_backpack");
+    public static final Identifier BROWN_BACKPACK_IDENTIFIER = new Identifier(MOD_ID, "brown_backpack");
+    public static final Identifier GREEN_BACKPACK_IDENTIFIER = new Identifier(MOD_ID, "green_backpack");
+    public static final Identifier RED_BACKPACK_IDENTIFIER = new Identifier(MOD_ID, "red_backpack");
+    public static final Identifier BLACK_BACKPACK_IDENTIFIER = new Identifier(MOD_ID, "black_backpack");
+    public static final Identifier[] IDENTIFIERS = new Identifier[]{
+            WHITE_BACKPACK_IDENTIFIER, ORANGE_BACKPACK_IDENTIFIER, MAGENTA_BACKPACK_IDENTIFIER,
+            LIGHT_BLUE_BACKPACK_IDENTIFIER, YELLOW_BACKPACK_IDENTIFIER, LIME_BACKPACK_IDENTIFIER,
+            PINK_BACKPACK_IDENTIFIER, GRAY_BACKPACK_IDENTIFIER, LIGHT_GRAY_BACKPACK_IDENTIFIER,
+            CYAN_BACKPACK_IDENTIFIER, PURPLE_BACKPACK_IDENTIFIER, BLUE_BACKPACK_IDENTIFIER,
+            BROWN_BACKPACK_IDENTIFIER, GREEN_BACKPACK_IDENTIFIER, RED_BACKPACK_IDENTIFIER,
+            BLACK_BACKPACK_IDENTIFIER};
 
-    public static final String BACKPACK_TRANSLATION_KEY = Util.createTranslationKey("container", BACKPACK_IDENTIFIER);
-    public static final String VOID_PACK_TRANSLATION_KEY = Util.createTranslationKey("container", VOID_PACK_IDENTIFIER);
-    public static final String ENDER_PACK_TRANSLATION_KEY = Util.createTranslationKey("container", ENDER_PACK_IDENTIFIER);
+    public static final String[] TRANSLATION_KEYS = new String[16];
+    public static final Item WHITE_BACKPACK = new BackpackItem(new Item.Settings().group(Backpack.SIMPLE_BACKPACK_GROUP).maxCount(1));
+    public static final Item ORANGE_BACKPACK = new BackpackItem(new Item.Settings().group(Backpack.SIMPLE_BACKPACK_GROUP).maxCount(1));
+    public static final Item MAGENTA_BACKPACK = new BackpackItem(new Item.Settings().group(Backpack.SIMPLE_BACKPACK_GROUP).maxCount(1));
+    public static final Item LIGHT_BLUE_BACKPACK = new BackpackItem(new Item.Settings().group(Backpack.SIMPLE_BACKPACK_GROUP).maxCount(1));
+    public static final Item YELLOW_BACKPACK = new BackpackItem(new Item.Settings().group(Backpack.SIMPLE_BACKPACK_GROUP).maxCount(1));
+    public static final Item LIME_BACKPACK = new BackpackItem(new Item.Settings().group(Backpack.SIMPLE_BACKPACK_GROUP).maxCount(1));
+    public static final Item PINK_BACKPACK = new BackpackItem(new Item.Settings().group(Backpack.SIMPLE_BACKPACK_GROUP).maxCount(1));
+    public static final Item GRAY_BACKPACK = new BackpackItem(new Item.Settings().group(Backpack.SIMPLE_BACKPACK_GROUP).maxCount(1));
+    public static final Item LIGHT_GRAY_BACKPACK = new BackpackItem(new Item.Settings().group(Backpack.SIMPLE_BACKPACK_GROUP).maxCount(1));
 
-    public static final Item BACKPACK = new BackpackItem(new Item.Settings().group(Backpack.SIMPLE_BACKPACK_GROUP).maxCount(1));
-    public static final Item VOID_PACK = new VoidPackItem(new Item.Settings().group(Backpack.SIMPLE_BACKPACK_GROUP).maxCount(1));
-    public static final Item ENDER_PACK = new EnderPackItem(new Item.Settings().group(Backpack.SIMPLE_BACKPACK_GROUP).maxCount(1));
+    public static final Item CYAN_BACKPACK = new BackpackItem(new Item.Settings().group(Backpack.SIMPLE_BACKPACK_GROUP).maxCount(1));
 
-    public static final Item SIMPLE_BUNDLE = new SimpleBundleItem(new Item.Settings().group(Backpack.SIMPLE_BACKPACK_GROUP).maxCount(1),  3456);
-    public static final Item VOID_BUNDLE = new VoidBundleItem(new Item.Settings().group(Backpack.SIMPLE_BACKPACK_GROUP).maxCount(1),  3456);
+    public static final Item PURPLE_BACKPACK = new BackpackItem(new Item.Settings().group(Backpack.SIMPLE_BACKPACK_GROUP).maxCount(1));
+
+    public static final Item BLUE_BACKPACK = new BackpackItem(new Item.Settings().group(Backpack.SIMPLE_BACKPACK_GROUP).maxCount(1));
+
+    public static final Item BROWN_BACKPACK = new BackpackItem(new Item.Settings().group(Backpack.SIMPLE_BACKPACK_GROUP).maxCount(1));
+    public static final Item GREEN_BACKPACK = new BackpackItem(new Item.Settings().group(Backpack.SIMPLE_BACKPACK_GROUP).maxCount(1));
+    public static final Item RED_BACKPACK = new BackpackItem(new Item.Settings().group(Backpack.SIMPLE_BACKPACK_GROUP).maxCount(1));
+    public static final Item BLACK_BACKPACK = new BackpackItem(new Item.Settings().group(Backpack.SIMPLE_BACKPACK_GROUP).maxCount(1));
+
+    public static final Item[] BACKPACKS = new Item[]{
+            WHITE_BACKPACK, ORANGE_BACKPACK, MAGENTA_BACKPACK, LIGHT_BLUE_BACKPACK, YELLOW_BACKPACK, LIME_BACKPACK,
+            PINK_BACKPACK, GRAY_BACKPACK, LIGHT_GRAY_BACKPACK, CYAN_BACKPACK, PURPLE_BACKPACK, BLUE_BACKPACK,
+            BROWN_BACKPACK, GREEN_BACKPACK, RED_BACKPACK, BLACK_BACKPACK};
+
+
 
     @Override
     public void onInitialize()
     {
-        ContainerProviderRegistry.INSTANCE.registerFactory(BACKPACK_IDENTIFIER, ((syncId, identifier, player, buf) -> {
-            final ItemStack stack = buf.readItemStack();
-            final Hand hand = buf.readInt() == 0 ? Hand.MAIN_HAND : Hand.OFF_HAND;
-            final BackpackInventoryInterface inventory = BackpackItem.getInventory(stack, hand, player);
-            final String customTitle = buf.readString();
+        String[] colours = new String[]{"white", "orange", "magenta", "light_blue", "yellow", "lime", "pink", "gray",
+                "light_gray", "cyan", "purple", "blue", "brown", "green", "red", "black"};
+        for (int i = 0; i < 16; ++i) {
+            TRANSLATION_KEYS[i] = "item.simple_backpack." + colours[i] + "_backpack";
+        }
 
-            return new BackpackScreenHandler(syncId, player.getInventory(), inventory.getInventory(), inventory.getInventoryWidth(), inventory.getInventoryHeight(), hand, customTitle);
-        }));
+        for (Identifier TEMP: IDENTIFIERS) {
+            ContainerProviderRegistry.INSTANCE.registerFactory(TEMP, ((syncId, identifier, player, buf) -> {
+                final ItemStack stack = buf.readItemStack();
+                final Hand hand = buf.readInt() == 0 ? Hand.MAIN_HAND : Hand.OFF_HAND;
+                final BackpackInventoryInterface inventory = BackpackItem.getInventory(stack, hand, player);
+                final String customTitle = buf.readString();
 
-        ContainerProviderRegistry.INSTANCE.registerFactory(VOID_PACK_IDENTIFIER, ((syncId, identifier, player, buf) -> {
-            final ItemStack stack = buf.readItemStack();
-            final Hand hand = buf.readInt() == 0 ? Hand.MAIN_HAND : Hand.OFF_HAND;
-            final VoidPackInventoryInterface inventory = VoidPackItem.getInventory(stack, hand, player);
-
-            return new VoidPackScreenHandler(syncId, player.getInventory(), inventory.getInventory(), inventory.getInventoryWidth(), inventory.getInventoryHeight(), hand);
-        }));
+                return new BackpackScreenHandler(syncId, player.getInventory(), inventory.getInventory(), inventory.getInventoryWidth(), inventory.getInventoryHeight(), hand, customTitle);
+            }));
+        }
 
         if(CONFIG.GENERAL.enableBackpack)
         {
-            Registry.register(Registry.ITEM, BACKPACK_IDENTIFIER, BACKPACK);
-        }
-
-        if(CONFIG.GENERAL.enableVoidpack)
-        {
-            Registry.register(Registry.ITEM, VOID_PACK_IDENTIFIER, VOID_PACK);
-        }
-
-        if(CONFIG.GENERAL.enableEnderpack)
-        {
-            Registry.register(Registry.ITEM, ENDER_PACK_IDENTIFIER, ENDER_PACK);
-        }
-
-        if(CONFIG.GENERAL.enableSimpleBundle)
-        {
-            Registry.register(Registry.ITEM, new Identifier(MOD_ID, "simple_bundle"), SIMPLE_BUNDLE);
-        }
-
-        if(CONFIG.GENERAL.enableVoidBundle)
-        {
-            Registry.register(Registry.ITEM, new Identifier(MOD_ID, "void_bundle"), VOID_BUNDLE);
+            for (int i = 0; i < 16; ++i) {
+                Registry.register(Registry.ITEM, IDENTIFIERS[i], BACKPACKS[i]);
+            }
         }
     }
 

@@ -1,20 +1,26 @@
 {
 
-    "item.simple_backpack.backpack": "Backpack",
+    "item.simple_backpack.white_backpack": "White Backpack",
+    "item.simple_backpack.orange_backpack": "Orange Backpack",
+    "item.simple_backpack.magenta_backpack": "Magenta Backpack",
+    "item.simple_backpack.light_blue_backpack": "Light Blue Backpack",
+    "item.simple_backpack.yellow_backpack": "Yellow Backpack",
+    "item.simple_backpack.lime_backpack": "Lime Backpack",
+    "item.simple_backpack.pink_backpack": "Pink Backpack",
+    "item.simple_backpack.gray_backpack": "Gray Backpack",
+    "item.simple_backpack.light_gray_backpack": "Light Gray Backpack",
+    "item.simple_backpack.cyan_backpack": "Cyan Backpack",
+    "item.simple_backpack.purple_backpack": "Purple Backpack",
+    "item.simple_backpack.blue_backpack": "Blue Backpack",
+    "item.simple_backpack.brown_backpack": "Brown Backpack",
+    "item.simple_backpack.green_backpack": "Green Backpack",
+    "item.simple_backpack.red_backpack": "Red Backpack",
+    "item.simple_backpack.black_backpack": "Black Backpack",
+
+
     "container.simple_backpack.backpack": "Simple Backpack",
 
-    "item.simple_backpack.void_pack": "Void Pack",
-    "container.simple_backpack.void_pack": "WARNING!!! ITEMS WILL BE LOST",
+    "itemGroup.simple_backpack.simple_backpack_group": "Simple Backpack",
 
-    "item.simple_backpack.ender_pack": "Ender Pack",
-    "container.simple_backpack.ender_pack": "Enderchest on the go",
-
-    "item.simple_backpack.simple_bundle": "Simple Bundle",
-    "item.simple_backpack.simple_bundle.tip1": "Sneak + right-click to dump ALL contents on ground",
-
-    "item.simple_backpack.void_bundle": "Void Bundle",
-    "item.simple_backpack.void_bundle.tip1": "A bundle for your garbage",
-    "item.simple_backpack.void_bundle.tip2": "Sneak + right-click to destroy contents",
-
-    "itemGroup.simple_backpack.simple_backpack_group": "Simple Backpack"
+    "item.simple_backpack.backpack.tooltip": "Backpacks! Right-click to open"
 }

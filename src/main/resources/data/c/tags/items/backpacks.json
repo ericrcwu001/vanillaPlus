@@ -1,0 +1,21 @@
+{
+  "replace": "false",
+  "values": [
+    "simple_backpack:white_backpack",
+    "simple_backpack:orange_backpack",
+    "simple_backpack:magenta_backpack",
+    "simple_backpack:light_blue_backpack",
+    "simple_backpack:yellow_backpack",
+    "simple_backpack:lime_backpack",
+    "simple_backpack:pink_backpack",
+    "simple_backpack:gray_backpack",
+    "simple_backpack:light_gray_backpack",
+    "simple_backpack:cyan_backpack",
+    "simple_backpack:purple_backpack",
+    "simple_backpack:blue_backpack",
+    "simple_backpack:brown_backpack",
+    "simple_backpack:green_backpack",
+    "simple_backpack:red_backpack",
+    "simple_backpack:black_backpack" 
+  ]
+}

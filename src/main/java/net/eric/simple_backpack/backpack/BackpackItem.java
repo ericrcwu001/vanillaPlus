@@ -35,12 +35,15 @@ public class BackpackItem extends BasePack
 
         if(!world.isClient)
         {
-            ContainerProviderRegistry.INSTANCE.openContainer(Backpack.BACKPACK_IDENTIFIER, user, buf -> {
-                ItemStack stack = user.getStackInHand(hand);
-                buf.writeItemStack(stack);
-                buf.writeInt(hand == Hand.MAIN_HAND ? 0 : 1);
-                buf.writeString(stack.getName().asString());
-            });
+            for (int i = 0; i < 16; ++i) {
+                ContainerProviderRegistry.INSTANCE.openContainer(Backpack.IDENTIFIERS[i], user, buf -> {
+                    ItemStack stack = user.getStackInHand(hand);
+                    buf.writeItemStack(stack);
+                    buf.writeInt(hand == Hand.MAIN_HAND ? 0 : 1);
+                    buf.writeString(stack.getName().asString());
+                });
+            }
+
         }
 
         return super.use(world, user, hand);
@@ -64,6 +67,6 @@ public class BackpackItem extends BasePack
 	@Override
 	public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext)
 	{
-	    tooltip.add(new TranslatableText("item.simple_backpack.backpack").formatted(Formatting.YELLOW));
+        tooltip.add(new TranslatableText("item.simple_backpack.backpack.tooltip").formatted(Formatting.YELLOW));
 	}
 }

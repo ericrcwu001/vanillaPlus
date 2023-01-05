@@ -1,8 +1,6 @@
 package net.eric.simple_backpack.backpack;
 
 import com.google.common.collect.Sets;
-import net.eric.simple_backpack.bundle.SimpleBundleItem;
-import net.eric.simple_backpack.bundle.VoidBundleItem;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventory;
@@ -70,8 +68,6 @@ public class BackpackScreenHandler extends ScreenHandler
         {
             Item testItem = stack.getItem();
             if(stack.getItem() instanceof BackpackItem ||
-                    stack.getItem() instanceof SimpleBundleItem ||
-                    stack.getItem() instanceof VoidBundleItem ||
                     SHULKER_BOXES.contains(testItem))
             {
                 return false;
@@ -131,8 +127,6 @@ public class BackpackScreenHandler extends ScreenHandler
         Item testItem = originalStack.getItem();
 
         if(testItem instanceof BackpackItem ||
-                testItem instanceof SimpleBundleItem ||
-                testItem instanceof VoidBundleItem ||
                 SHULKER_BOXES.contains(testItem))
         {
             return ItemStack.EMPTY;
