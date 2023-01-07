@@ -18,10 +18,9 @@ public class BackpackClient implements ClientModInitializer
     public void onInitializeClient()
     {
         for (int i = 0; i < 16; ++i) {
-            int finalI = i;
             ScreenProviderRegistry.INSTANCE.<BackpackScreenHandler>registerFactory(Backpack.IDENTIFIERS[i],
                     (container -> new BackpackClientScreen(container, MinecraftClient.getInstance().player.getInventory(),
-                            new TranslatableText(Backpack.TRANSLATION_KEYS[finalI]))));
+                            new TranslatableText("itemGroup.simple_backpack.simple_backpack_group"))));
         }
     }
 }
