@@ -1,23 +1,23 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "CAC",
-        "ABA",
-        "CAC"
+      "CAC",
+      "ABA",
+      "CAC"
     ],
     "key": {
-        "A": {
-            "item": "minecraft:netherite_ingot"
-        },
-        "B": {
-            "item": "c:shulkers"
-        },
-        "C": {
-            "item": "minecraft:white_wool"
-        }
+      "A": {
+        "item": "minecraft:netherite_ingot"
+      },
+      "B": {
+        "tag": "c:shulkers"
+      },
+      "C": {
+        "item": "minecraft:white_wool"
+      }
     },
     "result": {
-        "count": 1,
-        "item": "simple_backpack:white_backpack"
+      "item": "simple_backpack:white_backpack",
+      "count": 1
     }
-}
+  }
