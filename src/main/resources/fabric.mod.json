@@ -24,7 +24,8 @@
       "net.eric.trees.Trees"
     ],
     "client": [
-      "net.eric.simple_backpack.BackpackClient"
+      "net.eric.simple_backpack.BackpackClient",
+      "net.eric.trees.TreesClientMod"
     ],
     "server": []
   },

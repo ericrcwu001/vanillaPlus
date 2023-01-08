@@ -17,6 +17,8 @@ public class ModRegistries {
         instance.add(ModBlocks.JACARANDA_WOOD, 5, 5);
         instance.add(ModBlocks.STRIPPED_JACARANDA_LOG, 5, 5);
         instance.add(ModBlocks.STRIPPED_JACARANDA_WOOD, 5, 5);
+        instance.add(ModBlocks.JACARANDA_LEAVES, 30, 60);
+
     }
 
     private static void registerStrippables() {
