@@ -13,11 +13,11 @@
             "item": "c:shulkers"
         },
         "C": {
-            "item": "minecraft:white_wool"
+            "item": "minecraft:light_gray_wool"
         }
     },
     "result": {
         "count": 1,
-        "item": "simple_backpack:white_backpack"
+        "item": "simple_backpack:light_gray_backpack"
     }
 }
