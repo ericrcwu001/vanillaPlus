@@ -14,4 +14,8 @@ public class ModPlacedFeatures {
     public static final RegistryEntry<PlacedFeature> JACARANDA_PLACED = PlacedFeatures.register("jacaranda_placed",
             ModConfiguredFeatures.JACARANDA_SPAWN, VegetationPlacedFeatures.modifiers(
                     PlacedFeatures.createCountExtraModifier(1, 0.1f, 2)));
+
+    public static final RegistryEntry<PlacedFeature> CHERRY_PLACED = PlacedFeatures.register("cherry_placed",
+            ModConfiguredFeatures.CHERRY_SPAWN, VegetationPlacedFeatures.modifiers(
+                    PlacedFeatures.createCountExtraModifier(1, 0.1f, 2)));
 }

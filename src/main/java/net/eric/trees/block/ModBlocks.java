@@ -2,6 +2,7 @@ package net.eric.trees.block;
 
 import net.eric.trees.Trees;
 import net.eric.trees.block.custom.ModSaplingBlock;
+import net.eric.trees.world.feature.tree.CherrySaplingGenerator;
 import net.eric.trees.world.feature.tree.JacarandaSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -27,6 +28,22 @@ public class ModBlocks {
             new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).strength(4.0f).requiresTool()), ItemGroup.MATERIALS);
     public static final Block JACARANDA_SAPLING = registerBlock("jacaranda_sapling",
             new ModSaplingBlock(new JacarandaSaplingGenerator(),
+                    FabricBlockSettings.copy(Blocks.OAK_SAPLING)), ItemGroup.MATERIALS);
+
+    public static final Block CHERRY_LOG = registerBlock("cherry_log",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG).strength(4.0f).requiresTool()), ItemGroup.MATERIALS);
+    public static final Block CHERRY_WOOD = registerBlock("cherry_wood",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_WOOD).strength(4.0f).requiresTool()), ItemGroup.MATERIALS);
+    public static final Block STRIPPED_CHERRY_LOG = registerBlock("stripped_cherry_log",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_LOG).strength(4.0f).requiresTool()), ItemGroup.MATERIALS);
+    public static final Block STRIPPED_CHERRY_WOOD = registerBlock("stripped_cherry_wood",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_WOOD).strength(4.0f).requiresTool()), ItemGroup.MATERIALS);
+    public static final Block CHERRY_PLANKS = registerBlock("cherry_planks",
+            new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS).strength(4.0f).requiresTool()), ItemGroup.MATERIALS);
+    public static final Block CHERRY_LEAVES = registerBlock("cherry_leaves",
+            new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).strength(4.0f).requiresTool()), ItemGroup.MATERIALS);
+    public static final Block CHERRY_SAPLING = registerBlock("cherry_sapling",
+            new ModSaplingBlock(new CherrySaplingGenerator(),
                     FabricBlockSettings.copy(Blocks.OAK_SAPLING)), ItemGroup.MATERIALS);
 
 

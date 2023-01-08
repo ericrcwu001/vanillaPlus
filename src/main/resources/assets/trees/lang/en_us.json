@@ -5,5 +5,12 @@
   "block.trees.stripped_jacaranda_wood": "Stripped Jacaranda Wood",
   "block.trees.jacaranda_planks": "Jacaranda Planks",
   "block.trees.jacaranda_leaves": "Jacaranda Leaves",
-  "block.trees.jacaranda_sapling": "Jacaranda Sapling"
+  "block.trees.jacaranda_sapling": "Jacaranda Sapling",
+  "block.trees.cherry_log": "Cherry Log",
+  "block.trees.cherry_wood": "Cherry Wood",
+  "block.trees.stripped_cherry_log": "Stripped Cherry Log",
+  "block.trees.stripped_cherry_wood": "Stripped Cherry Wood",
+  "block.trees.cherry_planks": "Cherry Planks",
+  "block.trees.cherry_leaves": "Cherry Leaves",
+  "block.trees.cherry_sapling": "Cherry Sapling"
 }

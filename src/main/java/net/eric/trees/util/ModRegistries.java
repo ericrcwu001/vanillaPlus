@@ -19,10 +19,20 @@ public class ModRegistries {
         instance.add(ModBlocks.STRIPPED_JACARANDA_WOOD, 5, 5);
         instance.add(ModBlocks.JACARANDA_LEAVES, 30, 60);
 
+        instance.add(ModBlocks.CHERRY_LOG, 5, 5);
+        instance.add(ModBlocks.CHERRY_PLANKS, 5, 20);
+        instance.add(ModBlocks.CHERRY_WOOD, 5, 5);
+        instance.add(ModBlocks.STRIPPED_CHERRY_LOG, 5, 5);
+        instance.add(ModBlocks.STRIPPED_CHERRY_WOOD, 5, 5);
+        instance.add(ModBlocks.CHERRY_LEAVES, 30, 60);
+
     }
 
     private static void registerStrippables() {
         StrippableBlockRegistry.register(ModBlocks.JACARANDA_LOG, ModBlocks.STRIPPED_JACARANDA_LOG);
         StrippableBlockRegistry.register(ModBlocks.JACARANDA_WOOD, ModBlocks.STRIPPED_JACARANDA_WOOD);
+
+        StrippableBlockRegistry.register(ModBlocks.CHERRY_LOG, ModBlocks.STRIPPED_CHERRY_LOG);
+        StrippableBlockRegistry.register(ModBlocks.CHERRY_WOOD, ModBlocks.STRIPPED_CHERRY_WOOD);
     }
 }

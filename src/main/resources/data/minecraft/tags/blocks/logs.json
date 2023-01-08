@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#trees:jacaranda_logs"
+    "#trees:jacaranda_logs",
+    "#trees:cherry_logs"
   ]
 }

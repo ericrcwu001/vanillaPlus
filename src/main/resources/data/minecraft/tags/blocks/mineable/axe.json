@@ -1,6 +1,15 @@
 {
   "replace": false,
   "values": [
-
+    "trees:jacaranda_log",
+    "trees:jacaranda_planks",
+    "trees:jacaranda_wood",
+    "trees:stripped_jacaranda_log",
+    "trees:stripped_jacaranda_wood",
+    "trees:cherry_log",
+    "trees:cherry_planks",
+    "trees:cherry_wood",
+    "trees:stripped_cherry_log",
+    "trees:stripped_cherry_wood"
   ]
 }
