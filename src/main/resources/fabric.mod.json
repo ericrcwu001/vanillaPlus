@@ -20,7 +20,8 @@
   "entrypoints": {
     "main": [
       "net.eric.vanillaplus.VanillaPlus",
-      "net.eric.simple_backpack.Backpack"
+      "net.eric.simple_backpack.Backpack",
+      "net.eric.trees.Trees"
     ],
     "client": [
       "net.eric.simple_backpack.BackpackClient"
@@ -29,7 +30,8 @@
   },
   "mixins": [
     "vanillaplus.mixins.json",
-    "simple_backpack.mixins.json"
+    "simple_backpack.mixins.json",
+    "trees.mixins.json"
   ],
 
   "depends": {

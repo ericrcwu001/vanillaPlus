@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "trees:jacaranda_log",
+    "trees:jacaranda_wood",
+    "trees:stripped_jacaranda_log",
+    "trees:stripped_jacaranda_wood"
+  ]
+}
