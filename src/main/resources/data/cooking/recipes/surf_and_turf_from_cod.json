@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cooking:cutting_board"
+    },
+    {
+      "item": "cooking:chefs_knife"
+    },
+    {
+      "item": "minecraft:cooked_beef"
+    },
+    {
+      "item": "minecraft:cooked_cod"
+    }
+  ],
+  "result": {
+    "item": "cooking:surf_and_turf"
+  }
+}

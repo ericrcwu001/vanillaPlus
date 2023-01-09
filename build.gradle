@@ -13,6 +13,15 @@ group = project.maven_group
 repositories {
 	maven { url "https://maven.shedaniel.me/" }
 	maven { url "https://maven.terraformersmc.com/releases/" }
+	maven {
+		name "Siphalor's Maven"
+		url "https://maven.siphalor.de"
+	}
+	maven {
+		name "Jitpack"
+		url "https://jitpack.io"
+	}
+	maven { url = "https://maven.kyrptonaught.dev" }
 }
 
 dependencies {
@@ -24,9 +33,14 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
+	modImplementation "de.siphalor:nbtcrafting-1.18:2+"
+
 	modApi("me.shedaniel.cloth:cloth-config-fabric:6.4.90") {
 		exclude(group: "net.fabricmc.fabric-api")
 	}
+
+	modImplementation 'net.kyrptonaught:customportalapi:0.0.1-beta50-1.18'
+	include 'net.kyrptonaught:customportalapi:0.0.1-beta50-1.18'
 }
 
 processResources {

@@ -21,7 +21,8 @@
     "main": [
       "net.eric.vanillaplus.VanillaPlus",
       "net.eric.simple_backpack.Backpack",
-      "net.eric.trees.Trees"
+      "net.eric.trees.Trees",
+      "net.eric.cooking.Cooking"
     ],
     "client": [
       "net.eric.simple_backpack.BackpackClient",
@@ -32,14 +33,16 @@
   "mixins": [
     "vanillaplus.mixins.json",
     "simple_backpack.mixins.json",
-    "trees.mixins.json"
+    "trees.mixins.json",
+    "cooking.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.14.6",
     "fabric": "*",
     "minecraft": "~1.18.2",
-    "java": ">=17"
+    "java": ">=17",
+    "nbtcrafting": "*"
   },
   "suggests": {
     "another-mod": "*"
