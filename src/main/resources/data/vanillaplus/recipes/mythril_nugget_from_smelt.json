@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "vanillaplus:raw_mythril"
+  },
+  "result": "vanillaplus:mythril_nugget",
+  "experience": 0.15,
+  "cookingtime": 200
+}
