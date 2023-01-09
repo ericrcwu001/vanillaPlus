@@ -9,5 +9,16 @@
   "block.vanillaplus.netherrack_mythril_ore": "Netherrack Mythril Ore",
   "block.vanillaplus.deepslate_mythril_block": "Deepslate Mythril Block",
 
+  "item.vanillaplus.mythril_pickaxe": "Mythril Pickaxe",
+  "item.vanillaplus.mythril_axe": "Mythril Axe",
+  "item.vanillaplus.mythril_shovel": "Mythril Shovel",
+  "item.vanillaplus.mythril_hoe": "Mythril Hoe",
+  "item.vanillaplus.mythril_sword": "Mythril Sword",
+
+  "item.vanillaplus.mythril_helmet": "Mythril Helmet",
+  "item.vanillaplus.mythril_chestplate": "Mythril Chestplate",
+  "item.vanillaplus.mythril_leggings": "Mythril Leggings",
+  "item.vanillaplus.mythril_boots": "Mythril Boots",
+
   "itemGroup.vanillaplus.aether": "Aether Items"
 }
